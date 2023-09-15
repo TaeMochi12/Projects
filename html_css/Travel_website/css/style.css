@@ -5,7 +5,191 @@
     padding:0;
     box-sizing:border-box; /* if we make a box of 500 width then after applying padding also it should be adjusted in that 500 px only and should not become 520px */
 }
+/* ##########html element styling############## */ 
+html{
+    /*font-size:10px
+    16px-----100%
+    10px-----(100/16)*10
+    */
+    font-size:  62.5%; 
+}
 
 body{
     font-family:'Montserrat',sans-serif;
 }
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem; /*means 16px..we've taken root as 10px so just write 1.6rem for 16px */
+    text-decoration: none;
+}
+
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;  /*font size ka 0.5...em will be helful for responsiveness*/
+    letter-spacing: 0.10em;
+}
+
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.10em;
+    font-weight: 500;
+}
+
+/* ############header styling########## */
+
+.header{
+    text-align: center;
+    position: relative;
+    height:95vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/header-image.jpg');  /* we've used one more background using linear gradient to dark the background, and we've set its opacity from default 1 to 0.5*/
+    background-position: center;
+    background-size:cover ;  /*scales the image ,preserving its ratio, to the smallest possible size to fill the container leaving no blank space */
+    background-repeat: no-repeat;  
+
+}
+
+.navbar{
+    padding: 1rem;
+}
+
+
+
+.header .navbar .logo{
+    float: left;
+    
+}
+
+.header .navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+
+.navbar::after{     /* DOUBTTTTTTTTTTTTT*/
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.header .navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar a:link, 
+.navbar a:visited{
+    color: #f4f4f4;
+}
+
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid #fff ;
+}
+
+/* ########HEADER CONTENT STYLING############ */
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+}
+
+.header .header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.header .header-content p{
+    text-transform: uppercase;
+    
+}
+
+/*############SHOWCASE SECTION STYLING###########*/
+.showcase{
+    background: #ddd;
+    padding: 10rem 0;
+}
+
+.row{
+    height: 350px;
+    border: 2px solid red;
+}
+
+.row1{
+    margin-bottom: 10rem ;
+}
+
+.row1 .img-box,.row2 .text-box{
+    float: left;
+    width: 50%;
+}
+.row1 .text-box,.row2 .img-box{
+    float: right;
+    width: 50%;
+}
+
+.img-box{
+    border: 6px solid green;
+    height: 100%;
+}
+
+.text-box{
+    border: 6px solid purple;
+    padding: 3rem;
+}
+
+/* ####utility classes######### */
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;     
+}
+.lg-heading{           /*utility class..if we give lg-heading at more places then at all those places the font size will be changed*/
+    font-size: 3.5rem;
+}
+
+.mid-heading{
+    font-size: 2.2rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333;
+}
+
+.text-grey{
+    color: #555;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;       /*DOUBTTTTTTTTTTTTTTT*/
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;             /*DOUBTTTTTTTTTTTTTTT*/
+
+}
+
+.btn-primary{
+    background-color: #fff;
+    border-radius:  10rem ;
+}
+
+
+
+  
