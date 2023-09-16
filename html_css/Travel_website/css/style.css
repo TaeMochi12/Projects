@@ -120,7 +120,8 @@ h1,h2,h3{
 
 .row{
     height: 350px;
-    border: 2px solid red;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px #aaa;   /*horizontal-offset=0,vertical-offset=0,blur=20,stretch=0*/
 }
 
 .row1{
@@ -137,14 +138,70 @@ h1,h2,h3{
 }
 
 .img-box{
-    border: 6px solid green;
     height: 100%;
 }
 
 .text-box{
-    border: 6px solid purple;
     padding: 3rem;
 }
+
+.img-box img{
+    display: inline-block;
+    width:100%;
+    height: 100%;
+    object-fit: cover;        /*to maintain aspect ratio of image*/
+
+}
+
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* #####################FEATURES SECTION STYLING################### */
+
+    .features{
+        padding:10rem 0 ;
+    }
+
+   .box-wrapper{
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.363);
+   }
+   
+    .box{
+        width:33.333333%;
+        float: left;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .box-1,.box-3{
+        background-color: #263238;
+        color: white;
+    }
+
+    .box-2{
+        background:linear-gradient(25deg,#d64c7f,#ee4758 50%) ;
+        color: white;
+    }
+
+    .box-wrapper::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    /* #################FOOTER STYLING################ */
+    .footer{
+        background-color: #263238;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+    }
+     .social-media-links i{
+        margin: 2rem;
+     }
 
 /* ####utility classes######### */
 .container{
@@ -188,6 +245,21 @@ h1,h2,h3{
 .btn-primary{
     background-color: #fff;
     border-radius:  10rem ;
+}
+
+.btn-primary:hover{
+    background-color: #ddd;
+}
+
+.btn-secondary{
+    border: 2px solid #e63946;
+    border-radius: 1.5em;
+    color: #e63946;
+    background-color: #fff;
+}
+
+.btn-secondary:hover{
+    background-color: #fcf3f2;
 }
 
 
