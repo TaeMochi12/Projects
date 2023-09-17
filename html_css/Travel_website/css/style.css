@@ -58,12 +58,12 @@ h1,h2,h3{
 
 
 
-.header .navbar .logo{
+.navbar .logo{
     float: left;
     
 }
 
-.header .navbar .nav-items{
+.navbar .nav-items{
     float: right;
     margin-top: 1rem;
 }
@@ -74,7 +74,7 @@ h1,h2,h3{
     clear: both;
 }
 
-.header .navbar .nav-item{
+.navbar .nav-item{
     display: inline-block;
     padding: 1rem;
     text-transform: uppercase;
@@ -203,6 +203,43 @@ h1,h2,h3{
         margin: 2rem;
      }
 
+/* ################## ABOUT PAGE STYLING ####################*/
+.about{
+    padding:5rem 0rem;
+}
+
+/* .about-heading{
+    border-bottom: 6px solid #e63946;
+} */
+
+.about-heading::after{
+    content: '';
+    display: block;
+    border: 3px solid #e63946;   /*if we write 6px it will be actually 12 px.. 6ps top and 6px bottom*/
+    /* width: 30px;    to make desired length line */
+}
+
+/*ABOUT WRAPPER STYLING*/
+.about-wrapper{
+    text-align: center;
+}
+
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+}
+
+.about-wrapper .right{
+    float: right;           /*DOUBTTTTTTTTTTTTT*/
+    width: 50%;
+}
+
+.about-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
 /* ####utility classes######### */
 .container{
     max-width: 1200px;
@@ -231,6 +268,10 @@ h1,h2,h3{
 
 .text-grey{
     color: #555;
+}
+
+.bg-dark{
+    background-color: #263238;
 }
 
 .btn{
