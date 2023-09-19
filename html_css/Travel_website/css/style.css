@@ -489,6 +489,148 @@ textarea{
     background-color: #fcf3f2;
 }
 
+/* ################### MEDIA QUERIES ######################## */
+
+@media (max-width:500px){
+    html{
+        font-size: 50%;   /*8px*/
+    }
+
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box{     /*DOUBTTTTTTTTTT why not without row?*/
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.363);
+    }
+
+    .features .box-2,.features .box-3{
+        margin-top: 7rem;
+    }
+
+    .box-wrapper{
+        box-shadow: none;
+       }
+
+     .cta-left,.cta-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+     }
+
+     .company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+     }
+
+     .form{
+        float: none;
+        width: 100%;
+        height: auto;
+     }
+}
+
+@media (min-width:501px) and (max-width:768px){
+    html{
+        font-size: 50%;   /*8px*/
+    }
+
+    p{
+        font-size: 1.8rem;
+    }
+
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box{     /*DOUBTTTTTTTTTT why not without row?*/
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.363);
+    }
+
+    .features .box-2,.features .box-3{
+        margin-top: 7rem;
+    }
+
+    .box-wrapper{
+        box-shadow: none;
+       }
+
+     .cta-left,.cta-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+     }
+
+     .company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+     }
+
+     .form{
+        float: none;
+        width: 100%;
+        height: auto;
+     }
+}
+
+@media(min-width:769px) and (max-width:1200px)
+{
+    html{
+        font-size: 56.25%;
+    }
+
+    .row .text-box h2{
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+}
+
+@media(orientation:landscape) and (max-height:500px){                  /*important to give hieght otherwise it will be applied to desktop also but we want for mobile landscape modes only*/
+    .header{
+        height: 90vmax;     /*vmax means whichever is long height or width*/
+
+    }
+}
 
 
   
