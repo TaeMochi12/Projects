@@ -23,7 +23,7 @@ p,li{
     text-align: center;
     position: relative;
     height:100vh;
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/bday2.jpeg');  /* we've used one more background using linear gradient to dark the background, and we've set its opacity from default 1 to 0.5*/
+    background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url('../img/bday2.jpeg');  /* we've used one more background using linear gradient to dark the background, and we've set its opacity from default 1 to 0.5*/
     background-position: center;
     background-size: cover ;  /*scales the image ,preserving its ratio, to the smallest possible size to fill the container leaving no blank space */
     background-repeat: no-repeat;  
@@ -31,7 +31,7 @@ p,li{
 
 .header-content{
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
     
@@ -66,67 +66,148 @@ display: block;
 clear: both;
 }
 
-/* #################### UTILITY CLASSEES ###################### */
-
-.container{
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;     
-}
-.lg-heading{           /*utility class..if we give lg-heading at more places then at all those places the font size will be changed*/
-    font-size: 3.5rem;
+/* ############### Letter Button Space ############ */
+.showcase{
+    background:#995C68;
+    padding: 10rem 0;
 }
 
-.mid-heading{
-    font-size: 2.2rem;
-    font-style: italic;
+.row{
+    height: 350px;
+    background-color:#FFE4D6;
+    box-shadow: 0px 0px 20px 0px #aaa;   /*horizontal-offset=0,vertical-offset=0,blur=20,stretch=0*/
 }
 
-.text-red{
-    color: #e63946;
+
+.img-box{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.text-box{
+    float: right;
+    width: 50%;
+    padding: 3rem;
 }
 
-.text-light{
-    color: #f4f4f4;
+.text-box p{
+    font-size: 1.4rem;
 }
 
-.text-black{
-    color: #333;
-}
-
-.text-grey{
-    color: #555;
-}
-
-.bg-dark{
-    background-color: #263238;
-}
-
-.btn{
+.img-box img{
     display: inline-block;
-    padding: 0.5em 1.5em;       /*DOUBTTTTTTTTTTTTTTT*/
-    font-weight: 500;
-    text-transform: uppercase;
-    margin: 0.5em 0;             /*DOUBTTTTTTTTTTTTTTT*/
+    width:100%;
+    height: 100%;
+    object-fit: cover;        /*to maintain aspect ratio of image*/
 
 }
 
-.btn-primary{
-    background-color: #fff;
-    border-radius:  10rem ;
+.container h2{
+    text-align: center;
+    padding-top: 5rem;
 }
 
-.btn-primary:hover{
-    background-color: #ddd;
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
 }
 
-.btn-secondary{
-    border: 2px solid #e63946;
-    border-radius: 1.5em;
-    color: #e63946;
-    background-color: #fff;
+/* #################### CAKE CSS ########################## */
+
+
+#cake1 {
+  display: block;
+  position: relative;
+  margin: -10em auto 0 auto;
 }
 
-.btn-secondary:hover{
-    background-color: #fcf3f2;
+/* ============================================== Candle
+*/
+.cakebox{
+    width: 100%;
+    height: 100%;
+    background:#995C68; 
 }
+.bdaycake {
+  background: #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  top: 228px;
+  left: 50%;
+  margin-left: -2.4px;
+  margin-top: -8.33333333px;
+  width: 5px;
+  height: 35px;
+  transform: translateY(-300px);
+  backface-visibility: hidden;
+  animation: in 500ms 6s ease-out forwards;
+}
+.bdaycake:after,
+.bdaycake:before {
+  background: rgba(255, 0, 0, 0.4);
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 2.22222222px;
+}
+.bdaycake:after {
+  top: 25%;
+  left: 0;
+}
+.bdaycake:before {
+  top: 45%;
+  left: 0;
+}
+
+/* ============================================== Fire
+*/
+
+.blow {
+  border-radius: 100%;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -2.6px;
+  width: 6.66666667px;
+  height: 18px;
+}
+.blow:nth-child(1) {
+  animation: blow 2s 6.5s infinite;
+}
+.blow:nth-child(2) {
+  animation: blow 1.5s 6.5s infinite;
+}
+.blow:nth-child(3) {
+  animation: blow 1s 6.5s infinite;
+}
+.blow:nth-child(4) {
+  animation: blow 0.5s 6.5s infinite;
+}
+.blow:nth-child(5) {
+  animation: blow 0.2s 6.5s infinite;
+}
+
+/* ============================================== Animation Fire
+*/
+
+@keyframes blow {
+  0%, 100% {
+    background: rgba(254, 248, 97, 0.5);
+    box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    background: rgba(255, 50, 0, 0.1);
+    box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+    transform: translateY(-20px) scale(0);
+  }
+}
+
+@keyframes in {
+  to {
+    transform: translateY(0);
+  }
+}
+
+
