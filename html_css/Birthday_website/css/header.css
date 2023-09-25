@@ -208,6 +208,16 @@ clear: both;
   to {
     transform: translateY(0);
   }
+
 }
+
+/* ###################Cake Button####################### */
+
+.cake-section a{
+    padding: 1em;
+    text-align: center;
+
+}
+
 
 
