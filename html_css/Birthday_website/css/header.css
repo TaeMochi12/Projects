@@ -45,7 +45,7 @@ p,li{
 }
 
 .pics{
-    border: 2px solid brown;
+    height: 208px;
     margin: 0px 1px;
 }
 .pic-cards .pics{
@@ -73,7 +73,7 @@ clear: both;
 }
 
 .row{
-    height: 350px;
+    height: 400px;
     background-color:#FFE4D6;
     box-shadow: 0px 0px 20px 0px #aaa;   /*horizontal-offset=0,vertical-offset=0,blur=20,stretch=0*/
 }
@@ -91,12 +91,12 @@ clear: both;
 }
 
 .text-box p{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .img-box img{
     display: inline-block;
-    width:100%;
+    width:95%;
     height: 100%;
     object-fit: cover;        /*to maintain aspect ratio of image*/
 
@@ -222,6 +222,30 @@ clear: both;
     margin-top: 12px;
     display: inline-block;
 }
+
+/* #####################FOOTER#################################### */
+
+.footer
+{
+  height: 7rem;
+  padding: 40px;
+  background-color: #323036;
+}
+
+.quote{
+  text-align: center;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.madeby
+{
+  margin-top: 8px;
+  color: #ffffff;
+}
+
 
 
 

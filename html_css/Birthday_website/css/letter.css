@@ -168,41 +168,41 @@ body {
 
 /* ###################NAVBAR########################3 */
 
-.navbar{
+.navbar1{
     padding: 1rem;
 }
 
 
 
-.navbar .logo{
+.navbar1 .logo{
     float: left;
     
 }
 
-.navbar .nav-items{
+.navbar1 .nav-items{
     float: right;
     margin-top: 1rem;
 }
 
-.navbar::after{     /* DOUBTTTTTTTTTTTTT*/
+.navbar1::after{     /* DOUBTTTTTTTTTTTTT*/
     content: '';
     display: block;
     clear: both;
 }
 
-.navbar .nav-item{
+.navbar1 .nav-item{
     display: inline-block;
     padding: 1rem;
     text-transform: uppercase;
    
 }
 
-.navbar a:link, 
-.navbar a:visited{
+.navbar1 a:link, 
+.navbar1 a:visited{
     color: #f4f4f4;
 }
 
-.navbar a{
+.navbar1 a{
     padding-bottom: 0.3rem;
     text-decoration: none;
     letter-spacing: 2.5px;
@@ -210,7 +210,7 @@ body {
     font-weight: 600;
 }
 
-.navbar a:hover{
+.navbar1 a:hover{
     border-bottom: 1px solid #fff ;
 }
 
@@ -220,6 +220,9 @@ body {
     background-color: #fdbf00;
   }
 
+  .letterhead{
+    text-align: center;
+  }
 
   .card {
     width: 800px;
@@ -228,7 +231,7 @@ body {
     margin: auto;
     left: 0;
     right: 0;
-    top: 0;
+    top: 500px;
     bottom: 0;
     -webkit-perspective: 1200px;
     perspective: 1200px;
@@ -249,7 +252,7 @@ body {
   }
   .inside {
     background: linear-gradient(to right, #e7e7e7, #ffffff 30%);
-    line-height: 3;
+    line-height: 2;
     padding: 0 20px;
     text-align: center;
     display: flex;
@@ -360,7 +363,7 @@ body {
 }
 
   .inside p {
-    font-size: 11px;
+    font-size: 12px;
   }
 
  
