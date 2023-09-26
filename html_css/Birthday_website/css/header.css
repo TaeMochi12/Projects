@@ -213,10 +213,14 @@ clear: both;
 
 /* ###################Cake Button####################### */
 
+.cake-section{
+  text-align: center;
+}
+
 .cake-section a{
     padding: 1em;
-    text-align: center;
-
+    margin-top: 12px;
+    display: inline-block;
 }
 
 
