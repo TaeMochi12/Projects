@@ -157,3 +157,14 @@ body {
   top: 60%;
   left: 0;
 }
+
+/* ###############Media Queries##################### */
+@media (max-width:500px){
+
+.navbar .logo{
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: center;
+  }
+}

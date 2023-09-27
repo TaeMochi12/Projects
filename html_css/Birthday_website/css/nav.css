@@ -43,3 +43,15 @@
 .navbar a:hover{
     border-bottom: 1px solid #fff ;
 }
+
+/* ################ Media Queries######################## */
+@media (max-width:500px){
+
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+}

@@ -246,6 +246,29 @@ clear: both;
   color: #ffffff;
 }
 
+/* ######################MEDIA QUERIES###################### */
+@media (max-width:768px){
+  html{
+      font-size: 50%;   /*8px*/
+  }
+
+  .row{
+      height: auto;
+      width: 100%;
+  }
+
+  .row .img-box,
+  .row .text-box{     /*DOUBTTTTTTTTTT why not without row?*/
+      float: none;
+      width: 100%;
+     
+}
+
+.img-box img{
+  width: 100%;
+}
+}
+
 
 
 
