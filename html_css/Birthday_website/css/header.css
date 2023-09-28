@@ -39,13 +39,14 @@ p,li{
 
 .pic-cards{
     /* border: 2px solid red; */
+    display: flex;
     position: absolute;
-    top: 80%;
+    top: 70%;
     
 }
 
 .pics{
-    height: 208px;
+    height: 270px;
     margin: 0px 1px;
 }
 .pic-cards .pics{
@@ -249,7 +250,7 @@ clear: both;
 /* ######################MEDIA QUERIES###################### */
 @media (max-width:768px){
   html{
-      font-size: 50%;   /*8px*/
+      font-size: 70%;   /*8px*/
   }
 
   .row{
@@ -267,7 +268,15 @@ clear: both;
 .img-box img{
   width: 100%;
 }
+
+.footer{
+  height: 14rem;
 }
+.madeby{
+  margin-top: 16px;
+}
+}
+
 
 
 

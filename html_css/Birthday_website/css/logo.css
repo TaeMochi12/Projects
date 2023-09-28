@@ -9,7 +9,7 @@ body {
 
 .cake {
   position: absolute;
-  
+
   margin-left: 5px;
   margin-top: 5px;
   width: 100px;
@@ -159,12 +159,13 @@ body {
 }
 
 /* ###############Media Queries##################### */
-@media (max-width:500px){
+@media (max-width:768px){
 
-.navbar .logo{
-      float: none;
-      display: block;
-      width: 100%;
-      text-align: center;
+.center{
+      display: flex;
+      justify-content: center;
+  }
+  .cake{
+    top: 8%;
   }
 }
