@@ -194,7 +194,7 @@ body {
     }
     .cake1 {
         left: 150px;    
-        top: 8%;
+        top: 6%;
     }
 }
 
@@ -443,7 +443,7 @@ body {
 
 .text {
     width: 350px;
-    font-size: 50px;
+    font-size: 40px;
     left: -140px;
     top: 100px;
     z-index: -1;

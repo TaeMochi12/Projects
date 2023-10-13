@@ -215,6 +215,11 @@ body {
   visibility: hidden;
 }
 
+.bn a{
+  color: black;
+  font-weight: 550;
+}
+
 body {
     background-color: #fdbf00;
   }
@@ -504,7 +509,7 @@ body {
     .bn{
       visibility: visible;
       top: 240px;
-      left : 60px;
+      left : 75px;
     }
 
 
