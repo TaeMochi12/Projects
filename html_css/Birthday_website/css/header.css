@@ -318,7 +318,8 @@ section .container{
   }
 
   .footer {
-    height: 14rem;
+    height: 16rem;
+    padding: 20px;
   }
 
   .madeby {
